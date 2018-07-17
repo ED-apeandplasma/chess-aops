@@ -2,7 +2,7 @@
  * Authors: Eric Zhang and Jason Chen
  */
 
-;(function(ROOM_ID) {
+function chess(ROOM_ID) {
   'use strict';
   /*               0    1    2    3    4    5    6    7          */
   var START_B = [['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'],  /* 0 */
@@ -424,4 +424,5 @@
     _onPluginMessage(payload);
   };
 
-})(prompt('What room ID to use?').toLowerCase());
+}
+// start the game by doing chess({ROOM ID HERE}); in console.
